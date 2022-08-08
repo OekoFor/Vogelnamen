@@ -128,7 +128,7 @@ Psittacula krameri,NA,Rose-ringed Parakeet,NA,Halsbandsittich,Hbs,2,2,0,0,4,NA,,
 Tetrastes bonasia,NA,Hazel Grouse,NA,Haselhuhn,Has,2,2,4,2,NA,NA,,2,2,2,NA,"(Linnaeus, 1758)","PAL: nw, nz, ne",Tetrastes bonasia_Hazel Grouse,Hazel Grouse,hazgro1,species,1204,NA,HAGR,TEBO,Galliformes,phasia1,"Pheasants, Grouse, and Allies",Phasianidae,NA,NA,NA
 Galerida cristata,NA,Crested Lark,NA,Haubenlerche,Hl,2,2,2,2,4,NA,,,NA,2,NA,"(Linnaeus, 1758)","PAL, AF: weit verbreitet",Galerida cristata_Crested Lark,Crested Lark,crelar2,species,21955,NA,"CL,CRLA",GACR,Passeriformes,alaudi1,Larks,Alaudidae,NA,NA,NA
 Podiceps cristatus,NA,Great Crested Grebe,NA,Haubentaucher,Ht,2,2,2,2,2,3,,,3,2,NA,"(Linnaeus, 1758)","PAL, AF, OR, AU: weit verbreitet",Podiceps cristatus_Great Crested Grebe,Great Crested Grebe,grcgre1,species,1802,NA,GCGR,POCR,Podicipediformes,podici1,Grebes,Podicipedidae,NA,NA,NA
-Phoenicurus ochruros,NA,Black Redstart,NA,Hausrotschwanz,Hr,2,2,2,2,2,3,,,2,2,NA,"(Gmelin, SG, 1774)","PAL, OR: w PAL bis z China",Phoenicurus ochruros_Black Redstart,Black Redstart,blared1,species,28623,NA,BLRE,PHOC,Passeriformes,muscic3,Old World Flycatchers,Muscicapidae,NA,NA,NA
+Phoenicurus ochruros,NA,Black Redstart,NA,Hausrotschwanz,Hr,1,1,2,2,2,3,,,2,2,NA,"(Gmelin, SG, 1774)","PAL, OR: w PAL bis z China",Phoenicurus ochruros_Black Redstart,Black Redstart,blared1,species,28623,NA,BLRE,PHOC,Passeriformes,muscic3,Old World Flycatchers,Muscicapidae,NA,NA,NA
 Lullula arborea,NA,Wood Lark,NA,Heidelerche,Hei,2,2,2,2,2,3,,2,2,2,NA,"(Linnaeus, 1758)",NA,Lullula arborea_Wood Lark,Wood Lark,woolar1,species,21881,NA,"WOOD,WOLA",LUAR,Passeriformes,alaudi1,Larks,Alaudidae,NA,NA,NA
 Larus fuscus,NA,Lesser Black-backed Gull,NA,Heringsmöwe,Her,2,2,2,2,2,3,,,NA,2,NA,"Linnaeus, 1758",PAL: w Europa bis zn Sibirien,Larus fuscus_Lesser Black-backed Gull,Lesser Black-backed Gull,lbbgul,species,6368,LBBG,NA,LAFU,Charadriiformes,larida1,"Gulls, Terns, and Skimmers",Laridae,NA,NA,NA
 Cygnus olor,NA,Mute Swan,NA,Höckerschwan,Hö,2,2,2,2,2,2,,,3,2,NA,"(Gmelin, JF, 1789)",PAL: Europa bis z Asien,Cygnus olor_Mute Swan,Mute Swan,mutswa,species,337,MUSW,NA,CYOL,Anseriformes,anatid1,"Ducks, Geese, and Waterfowl",Anatidae,NA,NA,NA
@@ -2900,3 +2900,4 @@ Ruspolia nitidula,,Cone-headed grasshopper,,Schiefkopfschrecke,,12,,,,,,,,,,,,,,
 Gryllotalpa gryllotalpa,,European mole Cricket,,Maulwurfsgrille,,12,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Gryllus campestris,,European Field Cricket,,Feldgrille,,12,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Vulpes vulpes,,Red Fox,,Rotfuchs,,10,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Canis aureus,,Golden jackal,,Goldschakal,,10,,,,,,,,,,,,,,,,,,,,,,,,,,,
