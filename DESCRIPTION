@@ -1,0 +1,22 @@
+Package: Vogelnamen
+Title: Provides tables on scientific names, common names and various codes
+    for birds.
+Version: 0.0.1
+Authors@R: c(
+    person("Ralph", "Martin", , "martin@oekofor.de", role = c("aut", "cre")),
+    person("Felix", "Guenther", , "guenther@oekofor.de", role = c("aut", "cre"))
+  )
+Description: Transalte different names and labels of birds for e.g. use
+    with BirdNET.
+License: MIT + file LICENSE
+Suggests: 
+    dplyr,
+    jsonlite,
+    rebird,
+    tidyr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
+LazyData: true
