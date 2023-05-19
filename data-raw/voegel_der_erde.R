@@ -57,13 +57,11 @@ birds_table <-
   purrr::map_dfr(pdf_import_to_table) |>
   slice(2:length(col_1))
 
-View(birds_table)
-
-
 # 1) tidy family and order names. fill rows
 # 2) remove rows that were family or order only and their respecrtive bool columns
 # 3) collapse list columns
 # 4) rename columns
+# 5) clean special characters
 voegel_der_erde <-
   birds_table |>
   mutate("is_family" =  map_lgl(col_2, ~ has_element(.x, "Familie"))) |>
@@ -82,9 +80,10 @@ voegel_der_erde <-
     unlist(x) |>
       paste(collapse = " ")
   }))) |>
-  rename("comName_de" = col_1, "sciName" = col_2, "comName" = col_3, "breedingRange" = col_4)
+  rename("comName_de" = col_1, "sciName" = col_2, "comName" = col_3, "breedingRange" = col_4) |>
+  mutate(across(where(is.character), ~gsub(pattern = "‘", replacement = "'", x = .x)))
 
-
+#View(voegel_der_erde)
 
 
 # Save ------------------------------------------------------------------------------------------------------------
