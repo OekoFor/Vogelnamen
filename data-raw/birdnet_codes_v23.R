@@ -64,7 +64,7 @@ birdnet_codes <-
 # 4) patch only scientific familiy and order with existing species code from ebird taxonomy (no match from voegel der erde)
 # 5) patch german names and common english family again from voegel der erde
 # 6) include variable 'type' to identify birds
-# /) manually identify other classes (events, mammals, insects, amphibians) and patch 'type'
+# 7) manually identify other classes (events, mammals, insects, amphibians) and patch 'type'
 
 
 
