@@ -1,10 +1,10 @@
 Package: Vogelnamen
 Title: Provides tables on scientific names, common names and various codes
     for birds.
-Version: 0.0.1
+Version: 0.1.0
 Authors@R: c(
-    person("Ralph", "Martin", , "martin@oekofor.de", role = c("aut", "cre")),
-    person("Felix", "Guenther", , "guenther@oekofor.de", role = c("aut", "cre"))
+    person("Ralph", "Martin", , "martin@oekofor.de", role = c("aut")),
+    person("Felix", "Günther", , "guenther@oekofor.de", role = c("aut", "cre"))
   )
 Description: Transalte different names and labels of birds for e.g. use
     with BirdNET.
@@ -18,5 +18,5 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Depends: 
-    R (>= 2.10)
+    R (>= 3.10)
 LazyData: true
