@@ -6,9 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-BirdNET codes, species, family and order - common and scientific - in
-german and english all in one place. Also includes breeding ranges
-(biogeographical scale).
+THis is a data package that contains BirdNET codes, species, family and
+order - common and scientific - in german and english all in one place.
+Also includes breeding ranges (biogeographical scale).
 
 ## Installation
 
@@ -17,7 +17,7 @@ You can install the development version of Vogelnamen from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("OekoFor/Vogelnamen", auth_token = 'GITHUB_PAT')
+devtools::install_github("OekoFor/Vogelnamen")
 ```
 
 ## Example
