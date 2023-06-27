@@ -150,12 +150,24 @@ birdnet_codes_v23 <-
   dplyr::rows_patch(amphibians) |>
   dplyr::rows_patch(insects)
 
-
-View(birdnet_codes_v23)
-
 # birdnet_codes_v23 |>
 #   dplyr::filter(is.na(orderSciName)) |>
 #   View()
+
+
+# Translate groups ------------------------------------------------------------------------------------------------
+
+translation_groups <- tibble::tribble(
+  ~type, ~type_de,
+  "bird", "Vogel",
+  "amphibian", "Amphib",
+  "insect", "Insekt",
+  "mammal", "Säugetier",
+  "other", "weitere"
+)
+
+birdnet_codes_v23 <-
+  dplyr::left_join(birdnet_codes_v23, translation_groups)
 
 
 

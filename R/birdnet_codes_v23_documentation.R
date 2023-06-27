@@ -12,7 +12,7 @@
 #'
 #'
 #' @format ## `birdnet_codes_v23`
-#' A data frame with 3,337 rows and 11 columns:
+#' A data frame with 3,337 rows and 12 columns:
 #' \describe{
 #'   \item{sciName}{scientific names}
 #'   \item{comName}{common names}
@@ -25,6 +25,7 @@
 #'   \item{familyComName}{common names of family}
 #'   \item{familyComName_de}{common names of family in german}
 #'   \item{type}{identifies birds, mammals, amphibians, insects and other event classes}
+#'   \item{type_De}{column type in german}
 #' }
 #' @source <http://www.do-g.de/fileadmin/Vogelwarte_58_2020-1__DO-G_Dt_Namen_Voegel_d_Erde.pdf>
 #' @source <https://github.com/kahst/BirdNET-Analyzer>

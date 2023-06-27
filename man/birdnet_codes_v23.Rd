@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{birdnet_codes_v23}}{
 
-A data frame with 3,337 rows and 11 columns:
+A data frame with 3,337 rows and 12 columns:
 \describe{
 \item{sciName}{scientific names}
 \item{comName}{common names}
@@ -20,6 +20,7 @@ A data frame with 3,337 rows and 11 columns:
 \item{familyComName}{common names of family}
 \item{familyComName_de}{common names of family in german}
 \item{type}{identifies birds, mammals, amphibians, insects and other event classes}
+\item{type_De}{column type in german}
 }
 }
 }
