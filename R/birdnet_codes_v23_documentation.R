@@ -24,8 +24,8 @@
 #'   \item{familySciName}{scientific names of family}
 #'   \item{familyComName}{common names of family}
 #'   \item{familyComName_de}{common names of family in german}
-#'   \item{type}{identifies birds, mammals, amphibians, insects and other event classes}
-#'   \item{type_de}{column type in german}
+#'   \item{group}{identifies birds, mammals, amphibians, insects and other event classes}
+#'   \item{group_de}{column type in german}
 #' }
 #' @source <http://www.do-g.de/fileadmin/Vogelwarte_58_2020-1__DO-G_Dt_Namen_Voegel_d_Erde.pdf>
 #' @source <https://github.com/kahst/BirdNET-Analyzer>

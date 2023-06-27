@@ -19,8 +19,8 @@ A data frame with 3,337 rows and 12 columns:
 \item{familySciName}{scientific names of family}
 \item{familyComName}{common names of family}
 \item{familyComName_de}{common names of family in german}
-\item{type}{identifies birds, mammals, amphibians, insects and other event classes}
-\item{type_de}{column type in german}
+\item{group}{identifies birds, mammals, amphibians, insects and other event classes}
+\item{group_de}{column type in german}
 }
 }
 }

@@ -102,7 +102,7 @@ birdnet_codes_with_meta <-
     by = c("orderSciName", "familySciName"),
     unmatched = "ignore"
   ) |>
-  mutate(type = if_else(is.na(orderSciName), NA, "bird")) |>
+  mutate(group = if_else(is.na(orderSciName), NA, "birds")) |>
   identity()
 
 
@@ -110,12 +110,12 @@ birdnet_codes_with_meta <-
 # Custom list Non-bird Classes-----------------------------------------------------------------------------------------------------
 other <- tibble(
   "speciesCode" = c("dogdog", "engine", "envrnm", "frwrks", "gungun", "nocall", "powtoo", "siren1", "humwhi", "humvoc", "humnov"),
-  "type" = "other"
+  "group" = "other"
 )
 
 mammal <- tibble(
   "comName" = c("Coyote", "Gray Wolf", "Eastern Gray Squirrel", "Red Squirrel", "Eastern Chipmunk", "Mexican Black Howler Monkey", "White-tailed Deer"),
-  "type" = "mammal"
+  "group" = "mammals"
 )
 
 amphibians <-
@@ -125,7 +125,7 @@ amphibians <-
     sciName %in% c("Pseudacris crucifer", "Scaphiopus couchii", "Spea bombifrons")
     ) |>
   select(sciName, comName) |>
-  mutate(type = "amphibian")
+  mutate(group = "amphibians")
 # View(amphibians)
 
 insects <-
@@ -135,7 +135,7 @@ insects <-
     sciName %in% c("Atlanticus testaceus", "Microcentrum rhombifolium")
     ) |>
   select(sciName, comName) |>
-  mutate(type = "insect")
+  mutate(group = "insects")
 # View(insects)
 
 # birdnet_codes_with_meta |>
@@ -158,19 +158,19 @@ birdnet_codes_v23 <-
 # Translate groups ------------------------------------------------------------------------------------------------
 
 translation_groups <- tibble::tribble(
-  ~type, ~type_de,
-  "bird", "Vogel",
-  "amphibian", "Amphib",
-  "insect", "Insekt",
-  "mammal", "Säugetier",
-  "other", "weitere"
+  ~group, ~group_de,
+  "birds", "Vögel",
+  "amphibians", "Amphibien",
+  "insects", "Insekten",
+  "mammals", "Säugetiere",
+  "other", "Sonstige"
 )
 
 birdnet_codes_v23 <-
   dplyr::left_join(birdnet_codes_v23, translation_groups)
 
 
-
+#View(birdnet_codes_v23)
 # Save ------------------------------------------------------------------------------------------------------------
 
 usethis::use_data(birdnet_codes_v23, overwrite = TRUE)
