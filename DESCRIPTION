@@ -1,7 +1,7 @@
 Package: Vogelnamen
 Title: Provides tables on scientific names, common names and various codes
     for birds.
-Version: 0.9.1
+Version: 0.9.2
 Authors@R: c(
     person("Ralph", "Martin", , "martin@oekofor.de", role = c("aut")),
     person("Felix", "Günther", , "guenther@oekofor.de", role = c("aut", "cre"))
