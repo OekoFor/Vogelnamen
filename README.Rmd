@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-THis is a data package that contains BirdNET codes, species, family and order - common and scientific - in german and english all in one place. Also includes breeding ranges (biogeographical scale).
+This is a data package that contains BirdNET codes, species, family and order - common and scientific - in german and english all in one place. Also includes breeding ranges (biogeographical scale).
 
 
 ## Installation
@@ -30,15 +30,42 @@ You can install the development version of Vogelnamen from [GitHub](https://gith
 devtools::install_github("OekoFor/Vogelnamen")
 ```
 
-## Example
+## Available Datasets
 
-```{r example}
+```{r available_datasets}
 library(Vogelnamen)
 
-# see `?birdnet_codes_v23` for column descriptions
-skimr::skim(birdnet_codes_v23)
-
+ls.str("package:Vogelnamen") |> print(max.level=0)
 ```
+
+
+## Skim Datasets
+
+### birdnet codes
+
+```{r}
+# For column descriptions of the datasets see
+# ?birdnet_codes_v23
+```
+
+
+```{r example_birdnetcodes}
+skimr::skim(birdnet_codes_v24)
+```
+
+### breeding range codes
+
+```{r example_breedingrange}
+skimr::skim(breedingrange_codes)
+```
+
+```{r breedingranges}
+
+breedingrange_codes |> 
+  knitr::kable()
+```
+
+
 
 ## Data sources
 
